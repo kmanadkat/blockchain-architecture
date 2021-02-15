@@ -1,0 +1,17 @@
+{
+  "name": "bnd-exercise-c6",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
+  "repository": "",
+  "license": "MIT",
+  "scripts": {
+    "test": "truffle test test/ExerciseC6A.js"
+  },
+  "author": "Krupesh Anadkat",
+  "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.17"
+  }
+}
