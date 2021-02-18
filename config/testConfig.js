@@ -1,6 +1,8 @@
 
 var ExerciseC6A = artifacts.require("ExerciseC6A");
-var ExerciseC6AMultiParty = artifacts.require("ExerciseC6AMultiParty");
+var ExerciseC6B = artifacts.require("ExerciseC6B");
+var ExerciseC6C = artifacts.require("ExerciseC6C");
+var ExerciseC6CApp = artifacts.require("ExerciseC6CApp");
 
 var Config = async function(accounts) {
     
@@ -21,13 +23,17 @@ var Config = async function(accounts) {
 
     let owner = accounts[0];
     let exerciseC6A = await ExerciseC6A.new();
-    let exerciseC6AMultiParty = await ExerciseC6AMultiParty.new();
+    let exerciseC6B = await ExerciseC6B.new();
+    let exerciseC6C = await ExerciseC6C.new();
+    let exerciseC6CApp = await ExerciseC6CApp.new(exerciseC6C.address);
     
     return {
         owner: owner,
         testAddresses: testAddresses,
         exerciseC6A: exerciseC6A,
-        ExerciseC6AMultiParty: exerciseC6AMultiParty
+        exerciseC6B: exerciseC6B,
+        exerciseC6C: exerciseC6C,
+        exerciseC6CApp: exerciseC6CApp,
     }
 }
 

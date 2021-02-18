@@ -1,5 +1,5 @@
 {
-  "name": "bnd-exercise-c6",
+  "name": "bnd-exercise-6c",
   "version": "1.0.0",
   "description": "",
   "directories": {
@@ -7,11 +7,12 @@
   },
   "repository": "",
   "license": "MIT",
-  "scripts": {
-    "test": "truffle test test/ExerciseC6A.js"
-  },
+  "scripts": {},
   "author": "Krupesh Anadkat",
-  "dependencies": {
+  "devDependencies": {
+    "bignumber": "1.1.0",
+    "openzeppelin-solidity": "^1.10.0",
     "truffle-hdwallet-provider": "^1.0.17"
-  }
+  },
+  "dependencies": {}
 }
